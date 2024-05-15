@@ -9,10 +9,17 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --primary-font: "poppins", "sans-serif";
+  --secondary-font: "Dancing Script", cursive;
+  --color-black: #222;
+  --color-white: #ffffff;
+  --color-primary: #d61c22;
+}
 body {
   font: size 1.6rem;
-  font-family: "poppins", "sans-serif";
-  /* font-family: "Dancing Script", cursive;*/
+  font-family: var(--primary-font);
+  color: var(--color-black);
 }
 .header {
   display: flex;
@@ -35,4 +42,45 @@ body {
 }
 .header-logo {
   text-transform: capitalize;
+}
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/home-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-subtitle,
+.hero-maintitle {
+  color: var(--color-white);
+}
+.hero-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.hero-subtitle {
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.hero-maintitle {
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
+  text-align: center;
+}
+.hero-cta {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  text-transform: capitalize;
+  color: var(--color-white);
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
 }
