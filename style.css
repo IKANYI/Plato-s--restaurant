@@ -9,6 +9,10 @@
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 :root {
   --primary-font: "poppins", "sans-serif";
   --secondary-font: "Dancing Script", cursive;
@@ -20,6 +24,12 @@ body {
   font: size 1.6rem;
   font-family: var(--primary-font);
   color: var(--color-black);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   display: flex;
@@ -84,4 +94,72 @@ body {
   color: var(--color-white);
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;
+}
+.about {
+  display: grid;
+  padding: 3rem 6rem;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 50rem) {
+  .about {
+    padding: 1rem 0.4rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.about-image-img {
+  width: 20rem;
+  border-radius: 1rem;
+  transition: all 1s ease;
+}
+.about-image-img:hover {
+  transform: scale(1.02);
+}
+.title-subtitle {
+  font-family: var(--secondary-font);
+  color: var(--color-primary);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.title-maintitle {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+.about-text {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  color: #777;
+  line-height: 1rem;
+}
+.about-cta {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+}
+.about-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 12rem) {
+  .about-image-img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 1s ease;
+  }
+  .hero {
+    width: 100%;
+  }
 }
