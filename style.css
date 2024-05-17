@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logo-header-wrapper{
+  text-decoration: none;
+  color: var(--color-black);
+}
 
 html {
   font-size: 62.5%;
@@ -19,6 +23,7 @@ body {
   --color-black: #222;
   --color-white: #ffffff;
   --color-primary: #d61c22;
+  scroll-behavior: smooth;
 }
 body {
   font: size 1.6rem;
@@ -36,6 +41,9 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
+  position: fixed;
+  background-color: var(--color-white);
+  width:100%
 }
 @media screen and (max-width: 27.5rem) {
   .header {
@@ -64,6 +72,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 .hero-subtitle,
 .hero-maintitle {
@@ -228,4 +237,13 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: #888;
+}
+.footer{
+  background-color: #999;
+  padding: 0.6rem;
+}
+.footer-text{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
 }
