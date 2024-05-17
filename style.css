@@ -163,3 +163,69 @@ body {
     width: 100%;
   }
 }
+.banner-2 {
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/banner-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-2-subtitle {
+  color: var(--color-primary);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.banner-2-maintitle {
+  color: var(--color-white);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.menu {
+  padding: 2rem 1.5rem;
+}
+.menu-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  row-gap: 2rem;
+}
+.menu-item {
+  width: 18rem;
+}
+.menu-item-image {
+  height: 15rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.menu-item-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.menu-itemtitle {
+  margin: 0.6rem 0;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.menu-item-description {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1rem;
+  color: #777;
+}
+.menu-item-cta {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #888;
+}
